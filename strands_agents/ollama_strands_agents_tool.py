@@ -6,6 +6,12 @@ from strands_tools import current_time, python_repl, use_aws
 
 @tool
 def letter_counter(word: str, letter: str) -> int:
+    '''
+    指定された文字が単語内にいくつ含まれているかをカウントします。
+    :param word: 対象の単語
+    :param letter: カウントする文字
+    :return: 文字の出現回数
+    '''
     return word.lower().count(letter.lower())
 
 # Ollamaモデルの例
